@@ -1,0 +1,127 @@
+############################ Default configuration #########################
+baseURL = "https://alanprates.com/"
+languageCode = "en-us"
+# site title 
+title = "Alan Prates | Blog "
+# theme
+theme = "northendlab-hugo"
+# post pagination
+paginate = "5"
+# post excerpt
+summaryLength = "10"
+# disqus short name
+disqusShortname = "https-quirky-swanson-6293db-netlify-app" # get your shortname form here : https://disqus.com
+
+
+
+[outputs]
+home = ["HTML", "AMP", "RSS", "JSON"]
+
+########################## Plugings ######################################
+
+# css plugins
+[[params.plugins.css]]
+link = "plugins/bootstrap/bootstrap.min.css"
+[[params.plugins.css]]
+link = "plugins/themify-icons/themify-icons.css"
+
+# js plugins
+[[params.plugins.js]]
+link = "plugins/jQuery/jquery.min.js"
+[[params.plugins.js]]
+link = "plugins/bootstrap/bootstrap.min.js"
+[[params.plugins.js]]
+link = "plugins/search/fuse.min.js"
+[[params.plugins.js]]
+link = "plugins/search/mark.js"
+[[params.plugins.js]]
+link = "plugins/search/search.js"
+
+
+########################### Navigation ###################################
+
+# main menu
+[[menu.main]]
+URL = "contact"
+name = "Contatos"
+weight = 1
+
+[[menu.main]]
+URL = "tools"
+name = "Ferramentas"
+weight = 2
+
+# footer menu
+[[menu.footer]]
+URL = "contact"
+name = "Contatos"
+weight = 1
+
+[[menu.footer]]
+URL = "tools"
+name = "Ferramentas"
+weight = 2
+
+
+######################### Default Parameters ###########################
+[params]
+# home
+home = "Home"
+# logo
+logo = "images/logo-nordeste-ba.png"
+# meta data
+author = "Themefisher"
+description = "This is meta description"
+# google tag manager
+google_tag_manager = "" # your id
+# contact form action
+contact_form_action = "#" # contato via Zap : (73)991636180
+# copyright
+copyright = "&copy; 2021 Alan Prates All Rights Reserved"
+
+# preloader
+[params.preloader]
+enable = true
+preloader = "" # use png, jpg, svg or gif format
+
+# search
+[params.search]
+enable = true
+
+# cookies
+[params.cookies]
+enable = true
+expire_days = 2
+
+####################### banner #######################################
+[params.banner]
+bgImage = "images/banner/banner-bg.svg"
+title = "Web Developer/ Olá, meu nome é Alan... Desenvolvedor web apaixonado pelo o que faço..."
+image = "images/banner/illustration.svg"
+
+
+######################## call to action ###############################
+[params.cta]
+enable = true
+image = "https://alanprates.github.io/skill/images/IMG_20200719_183503894.jpg"
+title = " Portifolio"
+description = "busco sempre está me atualizando em relação a novas tecnologias na área. Hoje trabalho tanto com Desenvolvimento Web (sites / sistemas online) e Desenvolvimento de Programas customizados."
+[params.cta.button]
+enable = true
+label = "Visite meu Portifolio"
+link = "https://alanprates.github.io/skill/"
+
+
+############################## Social Site ##########################
+[[params.social]]
+icon = "ti-facebook" # themify icon pack https://themify.me/themify-icons
+link = "#"
+[[params.social]]
+icon = "ti-twitter-alt" # themify icon pack https://themify.me/themify-icons
+link = "#"
+[[params.social]]
+icon = "ti-github" # themify icon pack https://themify.me/themify-icons
+link = "#"
+[[params.social]]
+icon = "ti-linkedin" # themify icon pack https://themify.me/themify-icons
+link = "#"
